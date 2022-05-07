@@ -16,6 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+//import CameraOutdoorIcon from '@mui/icons-material/CameraOutdoor';
 
 const drawerWidth = 240;
 
@@ -32,14 +33,14 @@ function ResponsiveDrawer(props) {
       <Toolbar />
       <Divider />
       <List>
-        {['Dashboard', 'Hostuser', 'My Profile'].map((text, index) => (
+        {['Dashboard', 'Hostuser', 'MyProfile'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 
-             <Link to="/Home"></Link>
             </ListItemIcon>
-            <ListItemText primary={text} />
+            <Link to={"/"+text}> <ListItemText primary={text} /></Link>
+         
           </ListItem>
         ))}
        

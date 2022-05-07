@@ -4,7 +4,7 @@ import React from 'react'
 //    import * as React from 'react';
     import AppBar from '@mui/material/AppBar';
     import Button from '@mui/material/Button';
-    import CameraIcon from '@mui/icons-material/PhotoCamera';
+  //  import CameraIcon from '@mui/icons-material/PhotoCamera';
     import Card from '@mui/material/Card';
     import CardActions from '@mui/material/CardActions';
     import CardContent from '@mui/material/CardContent';
@@ -43,10 +43,10 @@ import React from 'react'
           <CssBaseline />
           <AppBar position="relative">
             <Toolbar>
-              <CameraIcon sx={{ mr: 2 }} />
-              <Typography variant="h6" color="inherit" noWrap>
+              {/* <CameraIcon sx={{ mr: 2 }} /> */}
+              {/* <Typography variant="h6" color="inherit" noWrap>
                 Album layout
-              </Typography>
+              </Typography> */}
             </Toolbar>
           </AppBar>
           <main>
@@ -66,7 +66,7 @@ import React from 'react'
                   color="text.primary"
                   gutterBottom
                 >
-                  Album layout
+                 Dashboard
                 </Typography>
                 <Typography variant="h5" align="center" color="text.secondary" paragraph>
                   Something short and leading about the collection below—its contents,
@@ -103,7 +103,7 @@ import React from 'react'
                       />
                       <CardContent sx={{ flexGrow: 1 }}>
                         <Typography gutterBottom variant="h5" component="h2">
-                          Heading
+                         Dashboard
                         </Typography>
                         <Typography>
                           This is a media card. You can use this section to describe the

@@ -6,23 +6,26 @@ const Navbar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="secondary">
         <Toolbar>
-        <Box
+          <Box
             component="img"
             sx={{
-            height: 64,
+              height: 64,
             }}
             alt="Your logo."
             src={Logo}
-        />
+          />
+         <h4> Milolive </h4>
 
-          <Button component={NavLink} to='/' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Dashboard</Button>
 
-          <Button component={NavLink} to='/Registration' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Profile</Button>
-       
+          {/* <Button component={NavLink} to='/' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Dashboard</Button>
+
+          <Button component={NavLink} to='/Registration' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Profile</Button> */}
+
           <Button component={NavLink} to='/login' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Login</Button>
-          
-          <Button component={NavLink} to='/Profile' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Hostuser</Button>
-          
+{/* 
+         // <Button component={NavLink} to='/Profile' style={({ isActive }) => { return { backgroundColor: isActive ? '#6d1b7b' : '' } }} sx={{ color: 'white', textTransform: 'none' }}>Hostuser</Button>
+       
+          Toolbar */}
 
         </Toolbar>
       </AppBar>

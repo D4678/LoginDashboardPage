@@ -1,4 +1,4 @@
-import { TextField, FormControlLabel, Checkbox, Button, Box, Alert } from '@mui/material';
+import { TextField, FormControlLabel, Checkbox, Button, Box, Alert,Container } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -33,7 +33,9 @@ const Registration = () => {
     }
   }
   return <>
-    <Box component='form' noValidate sx={{ mt: 1 }} id='registration-form' onSubmit={handleSubmit}>
+ 
+  <Container>
+    <Box component='form' noValidate sx={{ mt: 1}} id='registration-form' onSubmit={handleSubmit}>
       <TextField margin='normal' required fullWidth id='Agencyname' name='Agencyname' label='Agencyname' />
       <TextField margin='normal' required fullWidth id='AgencyWebsite' name='AgencyWebsite' label='AgencyWebsite' />
       <TextField margin='normal' required fullWidth id='ContactPersonNo' name='ContactPersonNo' label='ContactPersonNo' type='ContactPersonNo' />
@@ -48,10 +50,12 @@ const Registration = () => {
       <FormControlLabel control={<Checkbox value="agree" color="primary" name="tc" id="tc" />} label="I agree to term and condition." />
     
       <Box textAlign='center'>
-        <Button type='submit' variant='contained' sx={{ mt: 3, mb: 2, px: 5 }}>Join</Button>
+        <Button type='submit' variant='contained' sx={{ mt: 3, mb: 2, px: 5 }}>Submit</Button>
       </Box>
       {error.status ? <Alert severity={error.type}>{error.msg}</Alert> : ''}
     </Box>
+    </Container>
+   
   </>;
 };
 

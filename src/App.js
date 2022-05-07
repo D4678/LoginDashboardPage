@@ -8,6 +8,7 @@ import Registration from "./components/pages/auth/Registration"
 import Home from "./components/pages/Home";
 import Layout from "./components/pages/Layout";
 import Sidebar from './Component/Sidebar'
+import Hostuser from './components/pages/Hostuser'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="dashboard" element={<Sidebar/>}/>
             <Route path="Profile" element ={<Profile />}></Route>
             <Route path="Registration" element ={<Registration />}></Route>
+            <Route path="MyProfile" element={<Registration />}></Route>
           </Route>
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
